@@ -2,28 +2,12 @@
 <html>
   <head>
     <title>курсы онлайн</title>
-    <!-- <link rel="stylesheet" href="../public/style.css"> -->
     <link rel="shortcut icon" href="/logotip.jfif">
   </head>
   <body>
     <img src="../logotip.jfif" height="60px" width="60px" >
-    <div class="btn">
-      <ul>
-        <li><a onclick="about()"> about us</a></li>
-      </ul>
-    
-   <!-- <pre><h3> <button>about us</button>   <button>sign up</button>    <button></button>      <button>cost</button></h3></pre>  -->
 <h1><p class="nacalo">LEARN WITH US</p></h1>
-<form action="./about.ejs" method="post">
-  <input type="submit" name="about" hidden>
-</form>
-<script>
-  function about() {
-    document.querySelector('[name="about"]').click()
-  }
-</script>
-    </div>
-    <style>
+ <style>
       .btn {
         color: red;
         border-radius: 5px;
@@ -56,6 +40,31 @@
   
 }
     </style>
+    <div >
+      <a class="btn" onclick="about()">about us</a>
+      <a class="btn" onclick="cost()">prices</a>
+      <a class="btn" onclick="voyti()">sign in</a>
+</div>
+<form action="/about" method="get">
+  <input type="submit" name="about" hidden>
+</form>
+<form action="/cost" method="get">
+  <input type="submit" name="cost" hidden>
+</form>
+<form action="/voyti" method="get">
+  <input type="submit" name="voyti" hidden>
+</form>
+<script>
+  function about() {
+    document.querySelector('[name="about"]').click()
+  }
+  function cost() {
+    document.querySelector('[name="cost"]').click()
+  }
+  function voyti() {
+    document.querySelector('[name="voyti"]').click()
+  }
+</script>
 <img src="../german.jfif" height="250px" width="290px" left>      <img src="../english3.jfif" height="250px" width="250px">    <img src="../informatika2.jfif" height="250px" width="250px">       <img src="../matem2.jfif" height="250px" width="250px">
    <pre class="slova"> <i>            курсы немецкого                              курсы английского                      курсы информатики                   курсы математики  </i> </pre>
   </body>
