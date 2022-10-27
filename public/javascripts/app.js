@@ -4,7 +4,7 @@ async function send_f()
     let familya = document.querySelector("[name=surname]").value;
     let req = await fetch("/", {
         method: "POST",
-        header: {
+        headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({name:ady, surname:familya})

@@ -9,6 +9,7 @@ let users = [];
     users.push(req.body)
     res.send(users)
     
+    
   })
   module.exports = router;
   
