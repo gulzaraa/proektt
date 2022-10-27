@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>курсы онлайн</title>
+    <!-- <link rel="stylesheet" href="../public/style.css"> -->
+    <link rel="shortcut icon" href="/logotip.jfif">
+  </head>
+  <body>
+    <img src="../logotip.jfif" height="60px" width="60px" >
+    <div class="btn">
+      <ul>
+        <li><a onclick="about()"> about us</a></li>
+      </ul>
+    
+   <!-- <pre><h3> <button>about us</button>   <button>sign up</button>    <button></button>      <button>cost</button></h3></pre>  -->
+<pre><h1><p class="nacalo">LEARN WITH US</p></h1></pre>
+<form action="./about.ejs" method="post">
+  <input type="submit" name="about" hidden>
+</form>
+<script>
+  function about() {
+    document.querySelector('[name="about"]').click()
+  }
+</script>
+    </div>
+    <style>
+      .btn {
+        color: red;
+        border-radius: 5px;
+      }
+      body{
+        background-color: #fadadd;
+      }
+      .nacalo {
+        color: rgb(248, 18, 18);
+        background-color: rgb(223, 130, 130);
+        justify-content: center;
+        text-align: center;
+        font-size: 60px;
+      }
+      button{
+       margin: 5px;
+        width: 175px;
+        height: 23px;
+        border-radius: 10px;
+        border-color: rgb(248, 18, 18);
+        color: rgb(223, 130, 130);
+      }
+      img {
+         padding: 20px;
+         border-radius: 4px;
+      }
+.slova {
+  font-size: 20px;
+  font-family: sans-serif;
+  
+}
+    </style>
+<img src="../german.jfif" height="250px" width="290px" left>      <img src="../english3.jfif" height="250px" width="250px">    <img src="../informatika2.jfif" height="250px" width="250px">       <img src="../matem2.jfif" height="250px" width="250px">
+   <pre class="slova"> <i>            курсы немецкого                              курсы английского                      курсы информатики                   курсы математики  </i> </pre>
+  </body>
+</html>
